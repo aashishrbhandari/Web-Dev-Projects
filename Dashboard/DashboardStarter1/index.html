@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/bootstrap-v5.0.0-alpha1.min.css" />
+	<link rel="stylesheet" href="css/index.css" />
+
+	<script src="js/apexcharts-v3.19.3.js"></script>
+	<script defer src="js/index.js"></script>
+
+	<title>Dashboard V1</title>
+</head>
+
+<body>
+	<!-- Tob NavBar -->
+	<!-- Also note that .sticky-top uses position: sticky, which isn’t fully supported in every browser. -->
+	<nav class="navbar sticky-top navbar-light bg-light border">
+		<div class="container-fluid">
+			<a class="navbar-brand">Dashboard</a>
+			<div class="d-flex">
+				<div class="logout">
+					<button class="btn btn-outline-danger"
+						onclick="javascript:alert('Left To Implement')">LogOut</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Top NavBar -->
+
+	<!-- Main Content-->
+	<div class="row main-content">
+		<!-- Left SideBar Content -->
+		<nav class="main-content-left-sidebar col-md-3 col-lg-2 d-md-block bg-light collapse">
+			<div class="position-sticky pt-3">
+				<ul class="sidebar-list-group list-group m-2">
+					<li id="container-reports" class="list-group-item active">
+						Reports
+					</li>
+
+					<li id="container-custom-reports" class="list-group-item">
+						Custom Reports
+					</li>
+
+					<li id="container-webcategory" class="list-group-item">
+						WebCategory
+					</li>
+
+					<li id="container-regex-builder" class="list-group-item">
+						Regex Builder
+					</li>
+
+					<li id="container-config" class="list-group-item">
+						Config
+					</li>
+					<li id="container-helper" class="list-group-item">
+						Helper
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Left SideBar Content -->
+
+		<!-- Right Side Main Content -->
+		<main class="main-content-right-mainbar col-md-9 ml-sm-auto col-lg-10 px-md-4">
+			<div class="container-reports">
+
+				<div class="all_charts">
+					<div id="chart1"></div>
+					<div id="chart2"></div>
+					<div id="chart3"></div>
+					<div id="chart4"></div>
+				</div>
+
+			</div>
+			<div class="container-custom-reports">
+				<h1>Custom Reports Main</h1>
+
+				<ul class="list-group">
+					<li class="list-group-item">Custom Reports 1</li>
+					
+				</ul>
+			</div>
+
+			<div class="container-webcategory">
+				<h1>Web Category Main</h1>
+			</div>
+
+			<div class="container-regex-builder">
+				<h1>Regex Builder Main</h1>
+				<input class="regex-string" type="text">
+				<button class="add-to-regex-list btn btn-outline-primary btn-sm">Create Regex</button>
+
+				<div class="regex-displayer"></div>
+
+			</div>
+
+			<div class="container-config">
+				<h1>Config Main</h1>
+
+
+
+				<table class="table table-bordered m-2">
+					<tr>
+						<th>Blocked Title</th>
+						<td>Blocked</td>
+					</tr>
+
+					<tr>
+						<th>Blocked Description</th>
+						<td>Blocked Desc</td>
+					</tr>
+
+					<tr>
+						<th>Blocked Regex</th>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th>Blocked Category</th>
+						<td>
+							<span class="badge bg-info rounded-pill m-8 border">
+								Adult Content <span class="badge bg-secondary rounded-pill">59</span>
+							</span>
+							<span class="badge bg-info rounded-pill m-8 border">
+								Suspicous <span class="badge bg-secondary rounded-pill">59,089</span>
+							</span>
+						</td>
+					</tr>
+				</table>
+
+
+				<table class="table table-bordered m-2">
+					<tr>
+						<th>Allowed Title</th>
+						<td>Allowed</td>
+					</tr>
+
+					<tr>
+						<th>Allowed Description</th>
+						<td>Allowed Desc</td>
+					</tr>
+
+					<tr>
+						<th>Allowed Regex</th>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th>Allowed Category</th>
+						<td>
+							<span class="badge bg-info rounded-pill m-8 border">
+								Adult Content <span class="badge bg-secondary rounded-pill">59</span>
+							</span>
+							<span class="badge bg-info rounded-pill m-8 border">
+								Suspicous <span class="badge bg-secondary rounded-pill">59,089</span>
+							</span>
+						</td>
+					</tr>
+				</table>
+
+
+			</div>
+
+			<div class="container-helper">
+				<h1>Helper Main</h1>
+				<li class="list-group-item">Helper 1</li>
+			</div>
+		</main>
+		<!-- Right Side Main Content -->
+	</div>
+</body>
+
+</html>

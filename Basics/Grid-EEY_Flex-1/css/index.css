@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: filter 1s;
+    transition: transform 0.5s;
+}
+
+.card img:hover {
+    filter: none;
+    transform: translateY(-40px);
+}
+
+.card-parent.flexit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card-parent.gridit {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, 300px); */
+    /* So This Basically "auto-fit" Means that if Screen Size is 640px meaning only 2 child can be shown but it leaves 80px free then remaning size will be distributed amonsgt the 2 child */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); */
+}
+
+
+.card {
+    max-width: 320px;
+}
+
+.card {
+    /* max-width: 360px; */
+    padding: .4rem;
+}
+
+
+
+/*
+@media (max-width: 720px) {
+    .card-parent {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}
+*/
+
+.shifter {
+    border: 1px solid blue;
+    box-shadow: 0 25px 50px rgba(0,0,0,.08);
+    padding: 3px;
+    cursor: pointer;
+}
+
+.shifter:hover {
+    border: 1px solid black;
+    color: white;
+    background-color: blue;
+}
+
+.shifter-div {
+    margin: 1rem!important;
+}

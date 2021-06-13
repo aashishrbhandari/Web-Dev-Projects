@@ -1,0 +1,43 @@
+/* Since Navbar is Fixed and Z-Index is added Other Contents/Componenets will be hidden  */
+/* Copied From BootStrap: https://v5.getbootstrap.com/docs/5.0/examples/sticky-footer/*/
+/* Copied From BootStrap: https://v5.getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/ */
+
+/*
+main {
+    padding-top: 80px; /* Header(NavBar) * /
+    padding-bottom: 85px; /* Footer * /
+}
+*/
+.border-none {
+    border: none;
+}
+
+.light-grey {
+    background-color: #f9f9f9!important;
+}
+
+
+@media (max-width: 768px) {
+    .wedding-couple-images .card-group .card {
+        padding: 0% !important;
+        margin: 0% !important;
+        padding-bottom: 1rem !important;
+    }
+}
+
+.wedding-count-down {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.wedding-count-down h3 {
+    padding-right: 1rem;
+}
+
+.wedding-count-down-inner {
+    display: flex;
+    flex-direction: column;
+
+}

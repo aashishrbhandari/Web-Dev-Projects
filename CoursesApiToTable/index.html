@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses API To Table</title>
+
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/rowReorder.dataTables.min.css">
+    <link rel="stylesheet" href="css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="css/bootstrap.v5.min.css">
+    
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/bootstrap.v5.bundle.min.js"></script>
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.rowReorder.min.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    
+    <script src="js/index.js" defer></script>
+
+</head>
+<body>
+        <main>
+            <div class="container">
+                <div class="course-details row pt-4 pb-4">
+
+                    <div class="course-filter col-md-3">
+
+                        <div class="accordion shadow-sm" id="accordionExample">
+                            
+                            <div class="card">
+                                <div class="card-header p-0" id="headingOne">
+                                    <h2 class="mb-0">
+                                    <button class="btn btn-primary btn-block text-left collapsed p-3 rounded-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        List By Discipline
+                                    </button>
+                                    </h2>
+                                </div>
+                            
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body" style="max-height: 400px; overflow: scroll;">
+                                    
+                                        <ul class="list-group discipline-list">
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Aerospace Engineering
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Agriculture
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Architecture
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Atmospheric Science
+                                                </label>
+                                            </li>
+                                            
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Basic courses-Sem 1 and 2
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Biotechnology
+                                                </label>
+                                            </li>
+                                            
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Chemical Engineering
+                                                </label>
+                                            </li>
+                                            
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Chemistry and Biochemistry
+                                                </label>
+                                            </li>
+                                            
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Civil Engineering
+                                                </label>
+                                            </li>
+                                            
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Computer Science and Engineering
+                                                </label>
+                                            </li>
+                                            
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Electrical Engineering
+                                                </label>
+                                            </li>
+                                            
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Electronics & Communication Engineering
+                                                </label>
+                                            </li>
+                                            
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Engineering Design
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Environmental Science
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                General
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Humanities and Social Sciences
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Management
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Mathematics
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Mechanical Engineering
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Metallurgy and Material Science
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Mining Engineering
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Multidisciplinary
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Nanotechnology
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Ocean Engineering
+                                                </label>
+                                            </li>
+                                            
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Physics
+                                                </label>
+                                            </li>
+                                            
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Special Series
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Textile Engineering
+                                                </label>
+                                            </li>
+                                            
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Law
+                                                </label>
+                                            </li>
+                                            
+
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header p-0" id="headingTwo">
+                                    <h2 class="mb-0">
+                                    <button class="btn btn-primary btn-block text-left collapsed p-3 rounded-0" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        List By Content Type
+                                    </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        
+                                        <ul class="list-group content-type-list">
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Video Course
+                                                </label>
+                                            </li>
+
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Web Course
+                                                </label>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header p-0" id="headingThree">
+                                    <h2 class="mb-0">
+                                    <button class="btn btn-primary btn-block text-left collapsed p-3 rounded-0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        List By Institutions
+                                    </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+
+                                        <ul class="list-group institution-list">
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    IISc Bangalore
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    IIT Bombay
+                                                </label>
+                                            </li>
+
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    IIT Delhi
+                                                </label>                                            
+                                            </li>
+
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    IIT Guwahati
+                                                </label>                              
+                                            </li>
+
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    IIT Kanpur
+                                                </label>
+                                            </li>
+
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    IIT Kharagpur
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    IIT Madras
+                                                </label>
+                                            </li>
+                                            
+                                            <li class="list-group-item">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    IIT Roorkee
+                                                </label>                                            
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-table shadow-sm col-md-9">
+                        <table id="example" class="table table-striped table-bordered" width="100%">
+
+                        </table>
+                    </div>
+
+                </div>
+                
+            </div>
+        </main>
+</body>
+</html>

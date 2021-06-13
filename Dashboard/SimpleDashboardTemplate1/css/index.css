@@ -1,0 +1,106 @@
+
+/* Toggle Styles */
+
+/* Transition Effects*/
+.main_container {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/* If the Side Bar has class show then we will add padding of 250px */
+.main_container.show_side_bar {
+    padding-left: 250px;
+}
+
+/* Side Bar Specific CSS */
+.side_bar {
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: #f3f3f3;
+}
+
+.main_container.show_side_bar .side_bar {
+    width: 250px;
+}
+
+.main_content {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+.main_container.show_side_bar .main_content {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles [STARTS] */
+.side_bar_nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.side_bar_nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.side_bar_nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.side_bar_nav li a:hover {
+    color: #007bff;
+}
+/* Sidebar Styles [ENDS] */
+
+
+/* When the Sidebar is Selected */
+.side_bar_nav li a.selected_nav {
+    background-color: #ffffff;
+    color: #007bff;
+}
+
+@media(min-width:768px) {
+    .main_container {
+        padding-left: 0;
+    }
+
+    .main_container.show_side_bar {
+        padding-left: 250px;
+    }
+
+    .side_bar {
+        width: 0;
+    }
+
+    .main_container.show_side_bar .side_bar {
+        width: 250px;
+    }
+
+    .main_content {
+        padding: 20px;
+        position: relative;
+    }
+
+    .main_container.show_side_bar .main_content {
+        position: relative;
+        margin-right: 0;
+    }
+}

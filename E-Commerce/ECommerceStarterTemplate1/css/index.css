@@ -1,0 +1,117 @@
+:root {
+	--bg-color: white;
+	--txt-color: black;
+}
+
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+  }
+  
+
+
+/* Since Navbar is Fixed and Z-Index is added Other Contents/Componenets will be hidden  */
+/* Copied From BootStrap: https://v5.getbootstrap.com/docs/5.0/examples/sticky-footer/*/
+/* Copied From BootStrap: https://v5.getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/ */
+.main-body {
+	padding-top: 85px; /* Header(NavBar) */
+	padding-bottom: 80px; /* Footer */
+}
+
+.border-none {
+	border: none !important;
+}
+
+.list-group-horizontal {
+	justify-content: center;
+}
+
+/*
+@media (min-width: 768px) {
+	.image-intro-card {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
+*/
+
+
+
+/*
+
+image-intro-card
+product-intro-cards
+product-cards
+short-about-us
+
+*/
+
+
+.product-desc-card {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	justify-self: start;
+}
+
+.product-desc-card:first-child {
+	max-width: 800;	
+}
+
+.nav-container .btn-outline-light:hover {
+	background-color: #adabab;
+}
+
+@media (min-width: 768px) {
+
+	.nav-container {
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+
+	
+	.container-custom {
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+	
+
+	.navbar-nav {
+		padding-left: 10%;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.product-desc-card {
+		flex-flow: column-reverse;
+	}
+
+}
+
+.short-about-us {
+	margin-top: 2rem;
+	padding-top: 4px;
+	background-color: #f8f8f8;
+}
+
+
+.product-desc-card {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 20%;
+}
+
+/*
+.product-cards-details .card {
+	border: 1px solid black!important;
+}
+*/
+
+
+.navbar {
+	font-size: 1.3rem;
+	font-weight: 400!important;
+}

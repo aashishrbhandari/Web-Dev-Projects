@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-EEY-V1</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+    <header>
+        <nav> <!-- Adding it Later --> </nav>
+    </header>
+
+    <main>
+
+        <div class="shifter-div">
+            <span class="shifter">
+                CHANGE TO GRID/FLEX
+            </span>
+        </div>
+
+        <div class="card-parent gridit">
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="images/image_002.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h2>Paris</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="images/image_002.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h2>Paris</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente velit quaerat repudiandae</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="images/image_004.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h2>Paris</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque vel a ex dignissimos</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="images/image_004.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h2>Paris</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officia!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="images/image_005.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h2>Paris</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officia</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="images/image_005.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h2>Paris</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="images/image_005.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h2>Paris</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officia?   </p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer></footer>
+
+    <script>
+        document.querySelector(".shifter").addEventListener("click", function() {
+            let card_parent = document.querySelector(".card-parent");
+            if(card_parent.classList.contains("gridit")) {
+                card_parent.classList.replace("gridit", "flexit");
+            } else {
+                card_parent.classList.replace("flexit", "gridit");
+            }
+        });
+    </script>
+</body>
+</html>

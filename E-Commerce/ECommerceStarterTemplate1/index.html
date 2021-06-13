@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- <link rel="icon" type="image/png" href="images/a_alphabet_favicon.png" /> -->
+		<link rel="icon" type="image/png" href="../images/svg/wall-art-logo.svg" />
+
+		<title>E-Commerce (Starter) Basic Template</title>
+
+		<!-- CSS Libs -->
+		<link rel="stylesheet" href="css/bootstrap.v5.min.css" />
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/index.css" />
+
+		<!-- JS Libs -->
+		<script src="js/bootstrap.v5.bundle.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="js/index.js" defer></script>
+	</head>
+
+	<body>
+		<!-- Nav Bar -->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+			
+			<div class="container-fluid container-custom nav-container">
+				<!-- Brand Name -->
+				<a class="navbar-brand" href="#">
+					<img src="images/svg/wallart_logo.svg" width="48" height="48" alt="">
+					<strong>The CEPS</strong> 
+					<img src="images/svg/wallart-abstract-logo.svg" width="48" height="48" alt="">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Left Side NavBar Content -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto mb-2 mb-lg-0 navbar-link-list">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#" >Decor</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false" >
+								Kitchen
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown" > 
+								<li>
+									<a class="dropdown-item" href="#">
+										Action
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">Another action</a>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a class="dropdown-item" href="#" >Something else here</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Wall Decor</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Wall Arts</a>
+						</li>
+					</ul>
+					<!-- Left Side NavBar Content -->
+
+					<!-- Right Side NavBar Content -->
+					<div class="d-flex">
+						<button type="button" class="btn btn-outline-light border-none p-2">
+							<img src="images/svg/like-heart-outline.svg" height="26" width="26" alt="">
+							<span class="badge bg-secondary">4</span>
+						</button>
+						<button type="button" class="btn btn-outline-light border-none p-2 ml-2" >
+							<img src="images/svg/shopping-bag.svg" height="26" width="26" alt="">
+							<span class="badge bg-secondary">4</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Main Content-->
+		<div class="main-body">
+
+			<!--  Intro Carousal --> 
+			<div class="image-intro-card">
+				
+				<div class="container-custom">
+
+					<div id="carouselExampleDark" class="carousel carousel-dark slide" data-ride="carousel" style="max-height:760px;">
+						
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleDark" data-slide-to="0" class="active" ></li>
+							<li data-target="#carouselExampleDark" data-slide-to="1"></li>
+							<li data-target="#carouselExampleDark" data-slide-to="2"></li>
+						</ol>
+
+						<div class="carousel-inner">
+
+							<div class="carousel-item active" data-interval="3000">
+								<img src="images/wallart-intro-card_1.jpg" class="d-block w-100" alt="..." />
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+
+
+							<div class="carousel-item" data-interval="2000">
+								<img src="images/wallart-intro-card_2.jpg" class="d-block w-100" alt="..." />
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+
+
+							<div class="carousel-item data-interval="2000">
+								<img src="images/wallart-intro-card_3.jpg" class="d-block w-100" alt="..." />
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+
+
+						</div>
+						
+						<a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</a>
+
+						<a class="carousel-control-next" href="#carouselExampleDark" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Short Product Category Display -->
+			<div class="product-intro-cards">
+
+				<div class="container-custom">
+
+					<div class="card-group">
+
+						<div class="card p-2 border-none">
+							<img src="images/A3.jpg" class="card-img-top" alt="..." />
+						</div>
+
+						<div class="card border-none">
+							<img src="images/short_image_1.jpg" class="p-2 card-img-top" alt="..."/>
+							<img src="images/A5.jpg" class="p-2 card-img-top" alt="..."/>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Product Display [Actual] -->
+			<div class="product-cards">
+				
+				<div class="container-custom">
+
+					<!-- Product Switcher & SHort Info -->
+					<div class="card text-center border-none">
+						<div class="card-body">
+							<h5 class="card-title">Featured</h5>
+							<p class="card-text">
+								Say hello to our latest arrived Featured
+								<a href="#" class="btn btn-outline-dark"
+									>Explore More</a
+								>
+							</p>
+									<!--
+									class: wallart-birds-btn
+									Wall Arts: Brids
+									class: wallart-animals-btn
+									Wall Arts: Animals			
+									class: wallart-flowers-btn
+									Wall Arts: Flowers
+									class: wallart-frames-btn
+									Wall Arts: Frames
+									-->
+
+							<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+								<input type="radio" class="btn-check wallart-birds-btn" name="btnradio" id="btnradio1" autocomplete="off">
+								<label class="btn btn-outline-dark" for="btnradio1">Wall Arts: Brids</label>
+								
+								<input type="radio" class="btn-check wallart-animals-btn" name="btnradio" id="btnradio2" autocomplete="off">
+								<label class="btn btn-outline-dark" for="btnradio2">Wall Arts: Animals</label>
+								
+								<input type="radio" class="btn-check wallart-flowers-btn" name="btnradio" id="btnradio3" autocomplete="off">
+								<label class="btn btn-outline-dark" for="btnradio3">Wall Arts: Flowers</label>
+
+								<input type="radio" class="btn-check wallart-frames-btn" name="btnradio" id="btnradio4" autocomplete="off">
+								<label class="btn btn-outline-dark" for="btnradio4">Wall Arts: Frames</label>
+								</div>
+						</div>
+					</div>
+
+					<!-- Actual Product List Filed UP using JS  -->
+					<div class="row row-cols-1 row-cols-md-3 g-4 product-cards-details">
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- Short Plus Point Feature-->
+			<div class="short-about-us">
+
+				<div class="container-custom">
+
+
+					<div class="card border-none bg-transparent text-center">
+						<div class="card-header bg-transparent border-none">
+							<h4>What makes us Different?</h4>
+						</div>
+						<div class="card-body">
+						
+							<div class="card-group">
+
+								<div class="card border-none bg-transparent">
+								
+									<img src="images/svg/innovation.svg" height="64" width="64" class="card-img-top" alt="...">
+								
+									<div class="card-body">
+										<h5 class="card-title">INNOVATIVE</h5>
+										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									</div>
+								
+								</div>
+
+
+								<div class="card border-none bg-transparent">
+								
+									<img src="images/svg/innovation.svg" height="64" width="64" class="card-img-top" alt="...">
+								
+									<div class="card-body">
+										<h5 class="card-title">INNOVATIVE</h5>
+										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									</div>
+								
+								</div>
+
+
+								<div class="card border-none bg-transparent">
+								
+									<img src="images/svg/innovation.svg" height="64" width="64" class="card-img-top" alt="...">
+								
+									<div class="card-body">
+										<h5 class="card-title">INNOVATIVE</h5>
+										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									</div>
+								
+								</div>
+
+
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<!-- Foo Bar -->
+		<div>
+
+			<footer class="footer mt-auto py-3 bg-light">
+				<div class="container">
+				  <span class="text-muted">2020 CEPS Wall Art</span>
+				  <button class="btn btn-outline-light change-class-container">Change Class Container</button>
+				</div>
+			  </footer>
+
+		</div>
+	</body>
+</html>

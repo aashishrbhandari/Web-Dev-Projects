@@ -1,0 +1,45 @@
+
+main {
+    padding-top: 110px; /* Header(NavBar) */
+    padding-bottom: 80px; /* Footer */
+}
+
+
+
+.navbar-nav a {
+    color: white!important;
+}
+
+
+@media (min-width: 764px)  { 
+    .intro-card {
+        min-height: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.border-none {
+    border: none;
+}
+
+.intro-card .card-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.intro-card .card-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.intro-card .card-subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid white;
+}
