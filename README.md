@@ -11,3 +11,30 @@ I mostly make use
 Few other places where i have my few quick Web Projects
 - [CodePen](https://codepen.io/aashishrbhandari)
 - [CSS Battle](https://cssbattle.dev/player/aashishrbhandari)
+
+# Web Projects (Templates, Learning, Dashboard)
+
+### [CoursesApiToTable](https://aashishrbhandari.github.io/Web-Dev-Projects/CoursesApiToTable/)
+- [CoursesApiToTable](https://aashishrbhandari.github.io/Web-Dev-Projects/CoursesApiToTable/)
+
+### [Basics](https://aashishrbhandari.github.io/Web-Dev-Projects/Basics/)
+- [Grid-EEY_Flex-1](https://aashishrbhandari.github.io/Web-Dev-Projects/Basics/Grid-EEY_Flex-1/) 
+
+### [Dashboard](https://aashishrbhandari.github.io/Web-Dev-Projects/Dashboard/)
+- [DashboardStarter1](https://aashishrbhandari.github.io/Web-Dev-Projects/Dashboard/DashboardStarter1/)
+- [DashboardStarter_DnsTemplate](https://aashishrbhandari.github.io/Web-Dev-Projects/Dashboard/DashboardStarter_DnsTemplate/)
+- [MRBS_Dashboard_Practise](https://aashishrbhandari.github.io/Web-Dev-Projects/Dashboard/MRBS_Dashboard_Practise/)
+- [SimpleDashboardTemplate1](https://aashishrbhandari.github.io/Web-Dev-Projects/Dashboard/SimpleDashboardTemplate1/)
+
+### [E-Commerce](https://aashishrbhandari.github.io/Web-Dev-Projects/E-Commerce/)
+- [ECommerceStarterTemplate1](https://aashishrbhandari.github.io/Web-Dev-Projects/E-Commerce/ECommerceStarterTemplate1)
+- [Shoe_I_Fy-v1](https://aashishrbhandari.github.io/Web-Dev-Projects/E-Commerce/Shoe_I_Fy-v1/)
+
+### [EmailTemplates](https://aashishrbhandari.github.io/Web-Dev-Projects/EmailTemplates/)
+- [EmailTemplates](https://aashishrbhandari.github.io/Web-Dev-Projects/EmailTemplates)
+
+### Client Projects & Learning Snippets
+- [OceanVW-Hope-v2](https://aashishrbhandari.github.io/Web-Dev-Projects/OceanVW-Hope-v2) 
+- [WeddingCard](https://aashishrbhandari.github.io/Web-Dev-Projects/WeddingCard) 
+
+
